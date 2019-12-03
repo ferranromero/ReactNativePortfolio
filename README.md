@@ -18,7 +18,7 @@ npx react-native init [project_name]
 
 4. Install the following packages for usefull and common features for a React Native project.
 
-```bash
+```javascript
 npm install --save react-native-vector-icons
 ```
 
@@ -46,19 +46,19 @@ npm install --save react-native-linear-gradient
 
 ### Stack navigation
 
-```bash
+```javascript
 const AppNavigator = createStackNavigator(
   {
-    Launcher,
+    Launcher
   },
   {
-    initialRouteName: 'Launcher',
+    initialRouteName: "Launcher",
 
-    headerMode: 'none',
+    headerMode: "none",
     navigationOptions: {
-      headerVisible: false,
-    },
-  },
+      headerVisible: false
+    }
+  }
 );
 const App = createAppContainer(AppNavigator);
 

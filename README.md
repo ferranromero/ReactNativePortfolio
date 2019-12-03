@@ -31,5 +31,36 @@ npm install --save react-native-navigation
 ```
 
 ```bash
+npm install --save react-native-navigation-tabs
+```
+
+```bash
+npm install --save react-native-navigation-stack
+```
+
+```bash
 npm install --save react-native-linear-gradient
+```
+
+## Useful templates
+
+### Stack navigation
+
+```bash
+const AppNavigator = createStackNavigator(
+  {
+    Launcher,
+  },
+  {
+    initialRouteName: 'Launcher',
+
+    headerMode: 'none',
+    navigationOptions: {
+      headerVisible: false,
+    },
+  },
+);
+const App = createAppContainer(AppNavigator);
+
+export default App;
 ```
